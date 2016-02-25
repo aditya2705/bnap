@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.nishita.businessapp.ContactFormFragment"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+   >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <include layout="@layout/contact_form"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_margin="@dimen/_12sdp"/>
+
+    <Button
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:textAlignment="center"
+        android:text="submit"
+        android:id="@+id/submitbtn"
+        android:background="@color/md_red_500"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
