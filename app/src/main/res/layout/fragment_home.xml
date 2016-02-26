@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.swainroshankumar.home.MainActivityhome">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/fragment_container"
+        android:layout_height="wrap_content">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/i"
+                    android:layout_width="339dp"
+                    android:layout_height="190dp"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="345dp"
+
+                    android:textStyle="bold"
+                    android:layout_height="22dp"
+                    android:textAlignment="center"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+
+                <TextView
+                    android:id="@+id/textPara"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:textAlignment="center"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="347dp"
+                    android:layout_height="34dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+
+                    android:textStyle="bold"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="158dp"
+                        android:layout_height="35dp"
+                        android:textAlignment="center"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="176dp"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="153dp"
+                        android:layout_height="63dp"
+                        android:textAlignment="center"
+
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/putter"
+                    layout="@layout/footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

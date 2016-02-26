@@ -11,4 +11,16 @@
                                      ">> "Real time Brand Monitoring "\n"
                                      ">> "Advanced Publishing features"\n".</string>
 
+
+    <string name="tv">About us</string>
+    <string name="tv1">Our Services</string>
+    <string name="tv2">Branding Design</string>
+    <string name="tv3">Web Design</string>
+    <string name="tv4">Mobile App</string>
+    <string name="tv5">Video Production</string>
+    <string name="tv6">Our Clients</string>
+    <string name="tv7">Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</string>
+
+
+
 </resources>
