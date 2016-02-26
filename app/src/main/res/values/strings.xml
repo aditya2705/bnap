@@ -20,7 +20,64 @@
     <string name="tv5">Video Production</string>
     <string name="tv6">Our Clients</string>
     <string name="tv7">Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</string>
-
+    <string-array name="header_titles">
+        <item>What is Lorem ipsum dolor sit amet?</item>
+        <item>What is Lorem ipsum dolor sit amet?</item>
+        <item>What is Lorem ipsum dolor sit amet?</item>
+        <item>What is Lorem ipsum dolor sit amet?</item>
+        <item>What is Lorem ipsum dolor sit amet?</item>
+        <item>What is Lorem ipsum dolor sit amet?</item>
+        <item>What is Lorem ipsum dolor sit amet?</item>
+        <item>What is Lorem ipsum dolor sit amet?</item>
+    </string-array>
+    <string-array name="h1_items">
+        <item>Lorem Ipsum is dummy text which has no meaning however
+            looks very similar to real text. Common names for Lorem ipsum text include: -
+            blind text - dummy text - greeked text - placeholder text - mock content -
+            filler text</item>
+    </string-array>
+    <string-array name="h2_items">
+        <item>Lorem Ipsum is dummy text which has no meaning however
+            looks very similar to real text. Common names for Lorem ipsum text include: -
+            blind text - dummy text - greeked text - placeholder text - mock content -
+            filler text</item>
+    </string-array>
+    <string-array name="h3_items">
+        <item>Lorem Ipsum is dummy text which has no meaning however
+            looks very similar to real text. Common names for Lorem ipsum text include: -
+            blind text - dummy text - greeked text - placeholder text - mock content -
+            filler text</item>
+    </string-array>
+    <string-array name="h4_items">
+        <item>Lorem Ipsum is dummy text which has no meaning however
+            looks very similar to real text. Common names for Lorem ipsum text include: -
+            blind text - dummy text - greeked text - placeholder text - mock content -
+            filler text</item>
+    </string-array>
+    <string-array name="h5_items">
+        <item>Lorem Ipsum is dummy text which has no meaning however
+            looks very similar to real text. Common names for Lorem ipsum text include: -
+            blind text - dummy text - greeked text - placeholder text - mock content -
+            filler text</item>
+    </string-array>
+    <string-array name="h6_items">
+        <item>Lorem Ipsum is dummy text which has no meaning however
+            looks very similar to real text. Common names for Lorem ipsum text include: -
+            blind text - dummy text - greeked text - placeholder text - mock content -
+            filler text</item>
+    </string-array>
+    <string-array name="h7_items">
+        <item>Lorem Ipsum is dummy text which has no meaning however
+            looks very similar to real text. Common names for Lorem ipsum text include: -
+            blind text - dummy text - greeked text - placeholder text - mock content -
+            filler text</item>
+    </string-array>
+    <string-array name="h8_items">
+        <item>Lorem Ipsum is dummy text which has no meaning however
+            looks very similar to real text. Common names for Lorem ipsum text include: -
+            blind text - dummy text - greeked text - placeholder text - mock content -
+            filler text</item>
+    </string-array>
 
 
 </resources>
