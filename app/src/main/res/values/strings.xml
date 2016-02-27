@@ -18,7 +18,15 @@
     <string name="tv3">Web Design</string>
     <string name="tv4">Mobile App</string>
     <string name="tv5">Video Production</string>
+
     <string name="tv6">Our Clients</string>
+    <string name="videos">Videos</string>
+    <string name="images">Images</string>
+    <string name="Event_place_1">Newyork</string>
+    <string name="Event_date_1">02 Oct,2015</string>
+    <string name="event_name_1">Company Event Hamburg March 2015</string>
+
+
     <string name="tv7">Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</string>
     <string-array name="header_titles">
         <item>What is Lorem ipsum dolor sit amet?</item>
