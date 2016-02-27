@@ -12,8 +12,9 @@ public class PhotoCategoryObject {
         this.image = image;
 
     }
-    public PhotoCategoryObject(int image){
-        this.text=null;
-        this.image=image;
+
+    public PhotoCategoryObject(int image) {
+        this.text = null;
+        this.image = image;
     }
 }

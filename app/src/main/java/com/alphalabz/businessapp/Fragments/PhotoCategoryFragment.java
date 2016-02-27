@@ -25,9 +25,11 @@ public class PhotoCategoryFragment extends Fragment {
 
     View rootView;
     ArrayList<PhotoCategoryObject> data;
-    @Bind(R.id.recycler_photo_category) RecyclerView recyclerView;
+    @Bind(R.id.recycler_photo_category)
+    RecyclerView recyclerView;
     RecyclerAdapterPhotoCategory recyclerAdapterPhotoCategory;
     LinearLayoutManager linearLayoutManager;
+
     public PhotoCategoryFragment() {
 
     }
@@ -41,8 +43,8 @@ public class PhotoCategoryFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_photo_category, container, false);
-        ButterKnife.bind(this,rootView);
-        data =new ArrayList<>();
+        ButterKnife.bind(this, rootView);
+        data = new ArrayList<>();
         data.add(new PhotoCategoryObject("Presentation Skills ", R.drawable.workshop));
         data.add(new PhotoCategoryObject("Multinational Companies", R.drawable.workshop));
         data.add(new PhotoCategoryObject("Corporate", R.drawable.workshop));
@@ -52,7 +54,7 @@ public class PhotoCategoryFragment extends Fragment {
 
         recyclerView.setLayoutManager(linearLayoutManager);
 
-        recyclerAdapterPhotoCategory = new RecyclerAdapterPhotoCategory(getContext(),data);
+        recyclerAdapterPhotoCategory = new RecyclerAdapterPhotoCategory(getContext(), data);
         recyclerView.setAdapter(recyclerAdapterPhotoCategory);
         return rootView;
 

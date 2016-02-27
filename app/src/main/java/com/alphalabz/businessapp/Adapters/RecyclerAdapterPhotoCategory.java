@@ -53,14 +53,13 @@ public class RecyclerAdapterPhotoCategory extends RecyclerView.Adapter<RecyclerV
         return photoCategoryObjects.size();
     }
 
-    public void additem(int position, PhotoCategoryObject photoCategoryObject)
-    {
+    public void additem(int position, PhotoCategoryObject photoCategoryObject) {
         photoCategoryObjects.add(position, photoCategoryObject);
         this.notifyItemInserted(position);
         this.notifyDataSetChanged();
     }
-    public void deleteitem(int position)
-    {
+
+    public void deleteitem(int position) {
         photoCategoryObjects.remove(position);
         notifyItemRemoved(position);
     }
@@ -69,12 +68,16 @@ public class RecyclerAdapterPhotoCategory extends RecyclerView.Adapter<RecyclerV
 
 class RecyclerViewHolder extends RecyclerView.ViewHolder {
 
-    public @Bind(R.id.desc) TextView list_txt;
-    public @Bind(R.id.img) ImageView list_img;
+    public
+    @Bind(R.id.desc)
+    TextView list_txt;
+    public
+    @Bind(R.id.img)
+    ImageView list_img;
 
     public RecyclerViewHolder(View itemView) {
         super(itemView);
-        ButterKnife.bind(this,itemView);
+        ButterKnife.bind(this, itemView);
         /*list_txt= (TextView)itemView.findViewById(R.id.desc);
         list_img=(ImageView)itemView.findViewById(R.id.img);*/
     }

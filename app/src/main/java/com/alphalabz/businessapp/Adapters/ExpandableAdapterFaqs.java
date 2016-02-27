@@ -20,14 +20,16 @@ import java.util.List;
 public class ExpandableAdapterFaqs extends BaseExpandableListAdapter {
 
     private List<String> header_titles;
-    private HashMap<String,List<String>> child_titles;
+    private HashMap<String, List<String>> child_titles;
     private Context context;
-    public ExpandableAdapterFaqs(View view, List<String> header_titles, HashMap<String, List<String>> child_titles){
+
+    public ExpandableAdapterFaqs(View view, List<String> header_titles, HashMap<String, List<String>> child_titles) {
         this.context = view.getContext();
         this.child_titles = child_titles;
         this.header_titles = header_titles;
 
     }
+
     @Override
     public int getGroupCount() {
         return header_titles.size();
@@ -65,13 +67,12 @@ public class ExpandableAdapterFaqs extends BaseExpandableListAdapter {
 
     @Override
     public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
-        String title = (String)this.getGroup(i);
-        if(view == null)
-        {
-            LayoutInflater layoutInflater = (LayoutInflater)this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = layoutInflater.inflate(R.layout.fragment_faq_parent,null);
+        String title = (String) this.getGroup(i);
+        if (view == null) {
+            LayoutInflater layoutInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            view = layoutInflater.inflate(R.layout.fragment_faq_parent, null);
         }
-        TextView textView = (TextView)view.findViewById(R.id.heading_text);
+        TextView textView = (TextView) view.findViewById(R.id.heading_text);
         textView.setTypeface(null, Typeface.BOLD);
         textView.setText(title);
         return view;
@@ -79,13 +80,12 @@ public class ExpandableAdapterFaqs extends BaseExpandableListAdapter {
 
     @Override
     public View getChildView(int i, int i1, boolean b, View view, ViewGroup viewGroup) {
-        String title = (String)this.getChild(i,i1);
-        if(view == null)
-        {
-            LayoutInflater layoutInflater = (LayoutInflater)this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = layoutInflater.inflate(R.layout.fragment_faq_child,null);
+        String title = (String) this.getChild(i, i1);
+        if (view == null) {
+            LayoutInflater layoutInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            view = layoutInflater.inflate(R.layout.fragment_faq_child, null);
         }
-        TextView textView = (TextView)view.findViewById(R.id.child_text);
+        TextView textView = (TextView) view.findViewById(R.id.child_text);
         textView.setText(title);
 
         return view;

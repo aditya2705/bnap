@@ -1,8 +1,6 @@
 package com.alphalabz.businessapp.Adapters;
 
 import android.content.Context;
-import android.media.Image;
-import android.support.annotation.IntegerRes;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +11,6 @@ import com.alphalabz.businessapp.Objects.PhotoCategoryObject;
 import com.alphalabz.businessapp.R;
 
 import java.util.ArrayList;
-import java.util.Vector;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -40,7 +37,7 @@ public class RecyclerAdapterGallery extends RecyclerView.Adapter<RecyclerViewHol
 
     @Override
     public void onBindViewHolder(RecyclerViewHolderGallery holder, int position) {
-          //  holder.imageView.setImageResource(arrayList.get(position));
+        //  holder.imageView.setImageResource(arrayList.get(position));
         holder.imageView.setImageResource(arrayList.get(position).image);
     }
 
@@ -49,28 +46,29 @@ public class RecyclerAdapterGallery extends RecyclerView.Adapter<RecyclerViewHol
         return arrayList.size();
     }
 
-    public void additem(int position, int imageRes)
-    {
-        arrayList.add(position,new PhotoCategoryObject(imageRes));
+    public void additem(int position, int imageRes) {
+        arrayList.add(position, new PhotoCategoryObject(imageRes));
         this.notifyItemInserted(position);
         this.notifyDataSetChanged();
     }
-    public void deleteitem(int position)
-    {
+
+    public void deleteitem(int position) {
         arrayList.remove(position);
         notifyItemRemoved(position);
     }
 }
 
-     class RecyclerViewHolderGallery extends RecyclerView.ViewHolder{
-        public @Bind(R.id.img)ImageView  imageView;
-         public RecyclerViewHolderGallery(View itemView) {
+class RecyclerViewHolderGallery extends RecyclerView.ViewHolder {
+    public
+    @Bind(R.id.img)
+    ImageView imageView;
+
+    public RecyclerViewHolderGallery(View itemView) {
         super(itemView);
         ButterKnife.bind(this, itemView);
         /*list_txt= (TextView)itemView.findViewById(R.id.desc);
         list_img=(ImageView)itemView.findViewById(R.id.img);*/
     }
-
 
 
 }

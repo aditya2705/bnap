@@ -3,7 +3,6 @@ package com.alphalabz.businessapp.Fragments;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,23 +25,25 @@ public class GalleryFragment extends Fragment {
     ArrayList<PhotoCategoryObject> arrayList;
     GridLayoutManager gridLayoutManager;
     RecyclerAdapterGallery recyclerAdapterGallery;
-    @Bind(R.id.recycler_gallery) RecyclerView recyclerView;
-    public GalleryFragment(){
+    @Bind(R.id.recycler_gallery)
+    RecyclerView recyclerView;
+
+    public GalleryFragment() {
 
     }
 
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_gallery, container, false);
-        ButterKnife.bind(this,rootView);
+        ButterKnife.bind(this, rootView);
         arrayList = new ArrayList<>();
-        gridLayoutManager = new GridLayoutManager(getContext(),3);
-        for(int i=0; i<15; i+=3) {
+        gridLayoutManager = new GridLayoutManager(getContext(), 3);
+        for (int i = 0; i < 15; i += 3) {
             arrayList.add(new PhotoCategoryObject(R.drawable.one));
             arrayList.add(new PhotoCategoryObject(R.drawable.onet));
             arrayList.add(new PhotoCategoryObject(R.drawable.oneth));
         }
 
-        recyclerAdapterGallery = new RecyclerAdapterGallery(getContext(),arrayList);
+        recyclerAdapterGallery = new RecyclerAdapterGallery(getContext(), arrayList);
         recyclerView.setAdapter(recyclerAdapterGallery);
         recyclerView.setLayoutManager(gridLayoutManager);
         return rootView;

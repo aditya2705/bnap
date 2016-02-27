@@ -12,11 +12,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
-
-
-
 import com.alphalabz.businessapp.Objects.VideosCustomObject;
 import com.alphalabz.businessapp.R;
 
@@ -30,7 +25,7 @@ public class RecyclerAdapterVideos extends RecyclerView.Adapter<CustomViewHolder
     private Context context;
     private ArrayList<VideosCustomObject> customObjectArrayList;
 
-    public RecyclerAdapterVideos(Context context,ArrayList<VideosCustomObject> customObjectArrayList){
+    public RecyclerAdapterVideos(Context context, ArrayList<VideosCustomObject> customObjectArrayList) {
         this.context = context;
         this.customObjectArrayList = customObjectArrayList;
     }
@@ -56,7 +51,7 @@ public class RecyclerAdapterVideos extends RecyclerView.Adapter<CustomViewHolder
     }
 }
 
-class CustomViewHolder extends RecyclerView.ViewHolder{
+class CustomViewHolder extends RecyclerView.ViewHolder {
 
     public TextView titleTextView, descriptionTextView;
     public ImageView imageView;
@@ -65,7 +60,7 @@ class CustomViewHolder extends RecyclerView.ViewHolder{
         super(itemView);
         titleTextView = (TextView) itemView.findViewById(R.id.titleText);
         descriptionTextView = (TextView) itemView.findViewById(R.id.descriptionText);
-        imageView = (ImageView)itemView.findViewById(R.id.image);
+        imageView = (ImageView) itemView.findViewById(R.id.image);
     }
 }
 

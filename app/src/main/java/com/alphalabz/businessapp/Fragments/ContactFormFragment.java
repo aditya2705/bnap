@@ -24,11 +24,21 @@ public class ContactFormFragment extends Fragment {
 
     // TODO: Rename and change types of parameters
 
-    public @Bind(R.id.fullname) EditText fullname;
-    public @Bind(R.id.email) EditText email;
-    public @Bind(R.id.subject) EditText subject;
-    public @Bind(R.id.comments) EditText comments;
-    public @Bind(R.id.submitbtn) Button submitbtn;
+    public
+    @Bind(R.id.fullname)
+    EditText fullname;
+    public
+    @Bind(R.id.email)
+    EditText email;
+    public
+    @Bind(R.id.subject)
+    EditText subject;
+    public
+    @Bind(R.id.comments)
+    EditText comments;
+    public
+    @Bind(R.id.submitbtn)
+    Button submitbtn;
 
     public ContactFormFragment() {
         // Required empty public constructor
