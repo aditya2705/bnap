@@ -91,9 +91,7 @@ public class MainActivity extends AppCompatActivity {
                                 case D_HOME:
                                     fragment = new FragmentHome();
                                     break;
-                                case D_CONTACTUS:
-                                    fragment = new ContactFormFragment();
-                                    break;
+
                                 case D_IMAGES:
                                     fragment = new PhotoCategoryFragment();
                                     break;
