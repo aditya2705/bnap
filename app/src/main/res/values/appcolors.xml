@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="header_black">@color/md_black_1000</color>
+    <color name="app_text_color">@color/md_grey_700</color>
+</resources>

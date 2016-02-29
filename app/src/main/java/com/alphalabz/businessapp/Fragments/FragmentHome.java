@@ -39,7 +39,7 @@ public class FragmentHome extends Fragment {
         TextView tv6 = (TextView) view.findViewById(R.id.text4);
         TextView tv7 = (TextView) view.findViewById(R.id.textPara);
 
-        tv.setText(getString(R.string.tv));
+        /*tv.setText(getString(R.string.tv));
 
         tv1.setText(getString(R.string.tv1));
         tv2.setText(getString(R.string.tv2));
@@ -49,20 +49,20 @@ public class FragmentHome extends Fragment {
         tv6.setText(getString(R.string.tv6));
 
         tv7.setText(getString(R.string.tv7));
+        */
 
         ImageView iv = (ImageView) view.findViewById(R.id.i);
         ImageView iv1 = (ImageView) view.findViewById(R.id.imageView1);
         ImageView iv2 = (ImageView) view.findViewById(R.id.imageView2);
         ImageView iv3 = (ImageView) view.findViewById(R.id.imageView3);
         ImageView iv4 = (ImageView) view.findViewById(R.id.imageView4);
-
+        /*
         iv.setImageResource(R.drawable.i1);
         iv1.setImageResource(R.drawable.i4);
         iv2.setImageResource(R.drawable.i4);
         iv3.setImageResource(R.drawable.i5);
         iv4.setImageResource(R.drawable.i5);
-
-
+        */
     }
 }
 

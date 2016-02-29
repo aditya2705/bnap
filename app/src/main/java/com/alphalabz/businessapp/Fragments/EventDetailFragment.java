@@ -3,23 +3,17 @@ package com.alphalabz.businessapp.Fragments;
 /**
  * Created by Twinklee on 27-02-2016.
  */
-import android.app.Activity;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 import com.alphalabz.businessapp.Adapters.RecyclerAdapterEventImages;
 import com.alphalabz.businessapp.Adapters.RecyclerAdapterEventVideos;
-import com.alphalabz.businessapp.Adapters.RecyclerAdapterGallery;
 import com.alphalabz.businessapp.Objects.EventObject;
-import com.alphalabz.businessapp.Objects.PhotoCategoryObject;
 import com.alphalabz.businessapp.R;
 
 import java.util.ArrayList;
@@ -27,12 +21,10 @@ import java.util.ArrayList;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-import static android.support.v7.widget.LinearLayoutManager.*;
-
 /**
  * Created by Twinklee on 26-02-2016.
  */
-public class EventFragment extends Fragment {
+public class EventDetailFragment extends Fragment {
     public View rootView;
     @Bind(R.id.recyclerView_images)
     RecyclerView recyclerView_images;
@@ -51,7 +43,7 @@ public class EventFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        rootView = inflater.inflate(R.layout.content_events, container, false);
+        rootView = inflater.inflate(R.layout.fragment_event_detail, container, false);
         ButterKnife.bind(this, rootView);
         itemsData_images = new ArrayList<>();
        itemsData_videos = new ArrayList<>();

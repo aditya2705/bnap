@@ -3,21 +3,17 @@ package com.alphalabz.businessapp.Adapters;
 /**
  * Created by Twinklee on 27-02-2016.
  */
-import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.alphalabz.businessapp.Fragments.EventFragment;
+import com.alphalabz.businessapp.Fragments.EventDetailFragment;
 import com.alphalabz.businessapp.Objects.EventObject;
-import com.alphalabz.businessapp.Objects.PhotoCategoryObject;
 import com.alphalabz.businessapp.R;
 
 import java.util.ArrayList;
-
-import butterknife.Bind;
 
 /**
  * Created by Twinklee on 26-02-2016.
@@ -27,11 +23,11 @@ public class RecyclerAdapterEventImages extends RecyclerView.Adapter<RecyclerAda
 
     public View rootView;
 
-    EventFragment context;
+    EventDetailFragment context;
     ArrayList<EventObject> itemsData_images;
 
 
-    public RecyclerAdapterEventImages(EventFragment context, ArrayList<EventObject> itemsData_images) {
+    public RecyclerAdapterEventImages(EventDetailFragment context, ArrayList<EventObject> itemsData_images) {
 
         this.context = context;
         this.itemsData_images = itemsData_images;

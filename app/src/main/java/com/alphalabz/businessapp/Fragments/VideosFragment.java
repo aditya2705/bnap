@@ -38,8 +38,8 @@ public class VideosFragment extends android.support.v4.app.Fragment {
         recyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerView);
 
         ArrayList<VideosCustomObject> customObjectArrayList = new ArrayList<>();
-        customObjectArrayList.add(new VideosCustomObject("Title 1", "Description 1", R.drawable.and1));
-        customObjectArrayList.add(new VideosCustomObject("Title 2", "Description 2", R.drawable.and1));
+        customObjectArrayList.add(new VideosCustomObject("Technology Videos", "Iphone 6", R.drawable.and1));
+        customObjectArrayList.add(new VideosCustomObject("Professional skills", "List of Professional skills", R.drawable.and1));
         customObjectArrayList.add(new VideosCustomObject("Title 3", "Description 3", R.drawable.and1));
         customObjectArrayList.add(new VideosCustomObject("Title 4", "Description 4", R.drawable.and1));
 

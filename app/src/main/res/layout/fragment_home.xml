@@ -4,17 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.swainroshankumar.home.MainActivityhome">
 
 
     <FrameLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:id="@+id/fragment_container"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
 
 
@@ -30,96 +26,125 @@
 
                 <ImageView
                     android:id="@+id/i"
-                    android:layout_width="339dp"
-                    android:layout_height="190dp"
-                    android:scaleType="fitXY"/>
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/workshop" />
 
                 <TextView
                     android:id="@+id/textView"
-                    android:layout_width="345dp"
-
-                    android:textStyle="bold"
-                    android:layout_height="22dp"
-                    android:textAlignment="center"
-                    android:textSize="19dp" />
-
-                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="12dp" />
+
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/header_text_size"
+                    android:text="About us"
+                    android:textColor="@color/md_black_1000"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:gravity="center" />
 
 
                 <TextView
                     android:id="@+id/textPara"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:textAlignment="center"
-                    android:textSize="15dp"/>
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/app_text_color"
+                    android:text="@string/home_about_msg"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp" />
 
                 <TextView
                     android:id="@+id/textView1"
-                    android:layout_width="347dp"
-                    android:layout_height="34dp"
-                    android:textAlignment="center"
-                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/header_text_size"
 
-                    android:textStyle="bold"/>
+                    android:textColor="@color/md_black_1000"
+                    android:text="Our Sevices"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_18sdp" />
 
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
 
                     <TextView
                         android:id="@+id/text"
-                        android:layout_width="158dp"
-                        android:layout_height="35dp"
-                        android:textAlignment="center"
-                        android:textSize="14dp" />
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_11sdp"
+                        android:text="Branding Design"
+                        android:textColor="@color/app_text_color"
+                        android:gravity="center"
+                        android:textIsSelectable="false"
+                        android:layout_weight="1" />
 
                     <TextView
                         android:id="@+id/text1"
-                        android:layout_width="176dp"
-                        android:layout_height="match_parent"
-                        android:textAlignment="center"
-                        android:textSize="14dp" />
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_11sdp"
+                        android:text="Web Design"
+                        android:textColor="@color/app_text_color"
+                        android:gravity="center"
+                        android:textIsSelectable="false"
+                        android:layout_weight="1" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
 
                     <TextView
                         android:id="@+id/text2"
-                        android:layout_width="153dp"
-                        android:layout_height="63dp"
-                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
 
-                        android:textSize="14dp" />
+                        android:textSize="@dimen/_11sdp"
+                        android:text="Mobile App"
+                        android:layout_weight="1"
+                        android:textColor="@color/app_text_color"
+                        android:gravity="center"
+                        android:textIsSelectable="false" />
 
                     <TextView
                         android:id="@+id/text3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:textAlignment="center"
-                        android:textSize="14dp" />
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_11sdp"
+                        android:text="Video Producion"
+                        android:layout_weight="1"
+                        android:textColor="@color/app_text_color"
+                        android:gravity="center"
+                        android:textIsSelectable="false" />
 
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="34dp"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/text4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:textAlignment="center"
-                        android:textSize="18dp" />
+                        android:textSize="@dimen/header_text_size"
+                        android:text="Our Clients"
+                        android:textColor="@color/md_black_1000"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_18sdp" />
 
 
                 </LinearLayout>
@@ -128,7 +153,8 @@
                     android:id="@+id/putter"
                     layout="@layout/footer"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp" />
             </LinearLayout>
 
         </ScrollView>

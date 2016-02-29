@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -53,6 +54,7 @@ public class PhotoCategoryFragment extends Fragment {
         linearLayoutManager = new LinearLayoutManager(getContext());
 
         recyclerView.setLayoutManager(linearLayoutManager);
+
 
         recyclerAdapterPhotoCategory = new RecyclerAdapterPhotoCategory(getContext(), data);
         recyclerView.setAdapter(recyclerAdapterPhotoCategory);

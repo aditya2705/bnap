@@ -32,7 +32,7 @@ public class RecyclerAdapterVideos extends RecyclerView.Adapter<CustomViewHolder
 
     @Override
     public CustomViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_customvideos, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_videos_card, parent, false);
         CustomViewHolder customViewHolder = new CustomViewHolder(v);
         return customViewHolder;
     }

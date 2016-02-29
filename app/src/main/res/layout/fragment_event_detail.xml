@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:background="@drawable/workshop"
+                android:id="@+id/main_event_image"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_7sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/event_name_1"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="#333333"
+                    android:id="@+id/event_name"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_calendar_month_red"
+                        android:id="@+id/calender"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Event_date_1"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:id="@+id/date"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="#595959"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_location_red"
+                        android:id="@+id/location"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Event_place_1"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:id="@+id/place"
+                        android:layout_alignLeft="@+id/location"
+                        android:layout_alignBottom="@+id/location"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="#595959"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_about_msg"
+                    android:textColor="#333333"
+                    android:layout_marginTop="@dimen/_7sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/images"
+                    android:textColor="#333333"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:textSize="@dimen/_14sdp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp">
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/videos"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:textSize="@dimen/_14sdp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_videos"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    >
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

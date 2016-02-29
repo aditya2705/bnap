@@ -1,6 +1,7 @@
 package com.alphalabz.businessapp.Adapters;
 
 import android.content.Context;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.alphalabz.businessapp.Fragments.GalleryFragment;
 import com.alphalabz.businessapp.Objects.PhotoCategoryObject;
 import com.alphalabz.businessapp.R;
 
@@ -19,8 +21,9 @@ import butterknife.ButterKnife;
 /**
  * Created by Nishita on 22-02-2016.
  */
-public class RecyclerAdapterPhotoCategory extends RecyclerView.Adapter<RecyclerViewHolder> {
+public class RecyclerAdapterPhotoCategory extends RecyclerView.Adapter<RecyclerViewHolder> implements View.OnClickListener {
     Context context;
+
     private ArrayList<PhotoCategoryObject> photoCategoryObjects = new ArrayList<PhotoCategoryObject>();
 
     public RecyclerAdapterPhotoCategory(Context context, ArrayList<PhotoCategoryObject> photoCategoryObjects) {
@@ -37,6 +40,7 @@ public class RecyclerAdapterPhotoCategory extends RecyclerView.Adapter<RecyclerV
         // return new RecyclerViewHolder(itemView);
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View itemView = inflater.inflate(R.layout.custom_photo, parent, false);
+        itemView.setOnClickListener(this);
         return new RecyclerViewHolder(itemView);
     }
 
@@ -64,6 +68,11 @@ public class RecyclerAdapterPhotoCategory extends RecyclerView.Adapter<RecyclerV
         notifyItemRemoved(position);
     }
 
+    @Override
+    public void onClick(View view) {
+        ((AppCompatActivity)context).getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, new GalleryFragment()).commit();
+    }
 }
 
 class RecyclerViewHolder extends RecyclerView.ViewHolder {

@@ -6,7 +6,13 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.alphalabz.businessapp.Fragments.ContactFormFragment;
+import com.alphalabz.businessapp.Fragments.FragmentEvent;
 import com.alphalabz.businessapp.Fragments.FragmentHome;
+import com.alphalabz.businessapp.Fragments.GalleryFragment;
+import com.alphalabz.businessapp.Fragments.PhotoCategoryFragment;
+import com.alphalabz.businessapp.Fragments.TeamFragment;
+import com.alphalabz.businessapp.Fragments.VideosFragment;
 import com.alphalabz.businessapp.R;
 import com.mikepenz.fontawesome_typeface_library.FontAwesome;
 import com.mikepenz.materialdrawer.Drawer;
@@ -18,6 +24,20 @@ import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 public class MainActivity extends AppCompatActivity {
 
     private Drawer drawer = null;
+    private final static int D_HOME = 1;
+    private final static int D_NOTIFICATION = 2;
+    private final static int D_ABOUT = 3;
+    private final static int D_TEAM = 4;
+    private final static int D_IMAGES = 5;
+    private final static int D_VIDEOS = 6;
+    private final static int D_BLOGS = 7;
+    private final static int D_SOCIALFEEDS = 8;
+    private final static int D_EVENT = 9;
+    private final static int D_CONTACTUS = 10;
+    private final static int D_PROFILE = 11;
+    private final static int D_SETTINGS = 12;
+    private final static int D_LOGOUT = 13;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,11 +88,30 @@ public class MainActivity extends AppCompatActivity {
                             getSupportActionBar().setTitle(name);
                             final Fragment fragment;
                             switch (i) {
-                                case 1:
+                                case D_HOME:
                                     fragment = new FragmentHome();
-                                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();
                                     break;
+                                case D_CONTACTUS:
+                                    fragment = new ContactFormFragment();
+                                    break;
+                                case D_IMAGES:
+                                    fragment = new PhotoCategoryFragment();
+                                    break;
+                                case D_VIDEOS:
+                                    fragment = new VideosFragment();
+                                    break;
+                                case D_TEAM:
+                                    fragment = new TeamFragment();
+                                    break;
+                                case D_EVENT:
+                                    fragment = new FragmentEvent();
+                                    break;
+                                default:
+                                    fragment = new FragmentHome();
+                                    break;
+
                             }
+                            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();
                         }
 
                         return false;
