@@ -57,10 +57,10 @@ public class TeamFragment extends Fragment {
                     "adipisicing elit."
     };
     int[] imageID = {
-            R.drawable.one,
-            R.drawable.onet,
-            R.drawable.oneth,
-            R.drawable.one
+            R.drawable.img1,
+            R.drawable.img2,
+            R.drawable.img3,
+            R.drawable.img1
     };
 
     void view_inflate(View view, int i) {

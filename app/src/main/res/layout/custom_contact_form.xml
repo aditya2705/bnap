@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+   android:background="@drawable/border_rectangle">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Full name"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelText="Full name"
+        app:met_floatingLabelPadding="@dimen/_6sdp"
+        app:met_floatingLabelTextSize="@dimen/_16sdp"
+        app:met_floatingLabelTextColor="@color/md_black_1000"
+        app:met_hideUnderline="true"
+        android:paddingLeft="@dimen/_6sdp"
+        android:id="@+id/fullname"
+        android:background="@color/md_white_1000"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/md_black_1000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/layout_border_color"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Email"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelText="Email"
+        app:met_floatingLabelTextSize="@dimen/_16sdp"
+        app:met_floatingLabelTextColor="@color/md_black_1000"
+        app:met_hideUnderline="true"
+        app:met_floatingLabelPadding="@dimen/_6sdp"
+        android:paddingLeft="@dimen/_6sdp"
+        app:met_errorColor="@color/md_red_300"
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:background="@color/md_white_1000"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/md_black_1000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/layout_border_color"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Subject"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelText="Subject"
+        app:met_floatingLabelTextSize="@dimen/_16sdp"
+        app:met_floatingLabelTextColor="@color/md_black_1000"
+        app:met_hideUnderline="true"
+        android:paddingLeft="@dimen/_6sdp"
+        android:id="@+id/subject"
+        android:background="@color/md_white_1000"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/md_black_1000"
+        app:met_floatingLabelPadding="@dimen/_6sdp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/layout_border_color"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Comments"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelText="Comments"
+        app:met_floatingLabelTextSize="@dimen/_16sdp"
+        app:met_floatingLabelTextColor="@color/md_black_1000"
+        app:met_hideUnderline="true"
+        app:met_floatingLabelPadding="@dimen/_6sdp"
+        android:paddingLeft="@dimen/_6sdp"
+        android:id="@+id/comments"
+        android:inputType="textMultiLine"
+        android:background="@color/md_white_1000"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/md_black_1000" />
+
+
+</LinearLayout>

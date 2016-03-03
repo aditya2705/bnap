@@ -7,6 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.alphalabz.businessapp.Fragments.ContactFormFragment;
+import com.alphalabz.businessapp.Fragments.ContactFragment;
+import com.alphalabz.businessapp.Fragments.ContactUsFragment;
 import com.alphalabz.businessapp.Fragments.FragmentEvent;
 import com.alphalabz.businessapp.Fragments.FragmentHome;
 import com.alphalabz.businessapp.Fragments.GalleryFragment;
@@ -103,6 +105,9 @@ public class MainActivity extends AppCompatActivity {
                                     break;
                                 case D_EVENT:
                                     fragment = new FragmentEvent();
+                                    break;
+                                case D_CONTACTUS:
+                                    fragment = new ContactFragment();
                                     break;
                                 default:
                                     fragment = new FragmentHome();

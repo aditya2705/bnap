@@ -48,13 +48,13 @@ public class EventDetailFragment extends Fragment {
         itemsData_images = new ArrayList<>();
        itemsData_videos = new ArrayList<>();
 
-        itemsData_images.add(new EventObject(R.drawable.one));
-        itemsData_images.add(new EventObject(R.drawable.onet));
-        itemsData_images.add(new EventObject(R.drawable.oneth));
+        itemsData_images.add(new EventObject(R.drawable.img1));
+        itemsData_images.add(new EventObject(R.drawable.img2));
+        itemsData_images.add(new EventObject(R.drawable.img3));
 
-        itemsData_videos.add(new EventObject(R.drawable.one));
-        itemsData_videos.add(new EventObject(R.drawable.onet));
-        itemsData_videos.add(new EventObject(R.drawable.oneth));
+        itemsData_videos.add(new EventObject(R.drawable.img1));
+        itemsData_videos.add(new EventObject(R.drawable.img2));
+        itemsData_videos.add(new EventObject(R.drawable.img3));
   // images
 
         final  LinearLayoutManager layoutManager_images;

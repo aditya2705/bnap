@@ -2,4 +2,5 @@
 <resources>
     <color name="header_black">@color/md_black_1000</color>
     <color name="app_text_color">@color/md_grey_700</color>
+    <color name="layout_border_color">@color/md_grey_300</color>
 </resources>

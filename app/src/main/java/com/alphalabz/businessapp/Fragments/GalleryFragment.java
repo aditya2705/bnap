@@ -38,9 +38,9 @@ public class GalleryFragment extends Fragment {
         arrayList = new ArrayList<>();
         gridLayoutManager = new GridLayoutManager(getContext(), 3);
         for (int i = 0; i < 15; i += 3) {
-            arrayList.add(new PhotoCategoryObject(R.drawable.one));
-            arrayList.add(new PhotoCategoryObject(R.drawable.onet));
-            arrayList.add(new PhotoCategoryObject(R.drawable.oneth));
+            arrayList.add(new PhotoCategoryObject(R.drawable.img1));
+            arrayList.add(new PhotoCategoryObject(R.drawable.img2));
+            arrayList.add(new PhotoCategoryObject(R.drawable.img3));
         }
 
         recyclerAdapterGallery = new RecyclerAdapterGallery(getContext(), arrayList);
