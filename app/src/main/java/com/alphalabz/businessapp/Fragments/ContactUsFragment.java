@@ -1,5 +1,7 @@
 package com.alphalabz.businessapp.Fragments;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Layout;
@@ -41,6 +43,7 @@ public class ContactUsFragment extends Fragment implements OnMapReadyCallback {
     final String ADDRESS="Plot No.3,Flat No.A/30 Laxmi Niwas,3rd Floor,Near Sadhna School,Sion(W),Mumbai-400022";
     final String PHONE="9593857810";
     final String EMAIL="info@wohling.com";
+    String[] emails= {"info@wohling.com"};
     public ContactUsFragment()
     {
 
@@ -66,7 +69,25 @@ public class ContactUsFragment extends Fragment implements OnMapReadyCallback {
         phImage.setImageResource(R.drawable.i4);
         emailImage.setImageResource(R.drawable.i5);
 
+        phone.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_DIAL);
+                i.setData(Uri.parse("tel:" + PHONE));
+                startActivity(i);
+            }
+        });
 
+        email.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(Intent.ACTION_SEND);
+                i.setData(Uri.parse("mailto:"));
+                i.setType("text/plain");
+                i.putExtra(Intent.EXTRA_EMAIL, emails);
+                startActivity(Intent.createChooser(i, "Send mail..."));
+
+            }
+        });
 
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(this);
