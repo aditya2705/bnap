@@ -70,7 +70,7 @@ public class ExpandableAdapterFaqs extends BaseExpandableListAdapter {
         String title = (String) this.getGroup(i);
         if (view == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = layoutInflater.inflate(R.layout.fragment_faq_parent, null);
+            view = layoutInflater.inflate(R.layout.fragment_faq_recycler, null);
         }
         TextView textView = (TextView) view.findViewById(R.id.heading_text);
         textView.setTypeface(null, Typeface.BOLD);
