@@ -4,15 +4,10 @@
     android:layout_height="match_parent">
 
 
-    <include
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        layout="@layout/custom_event_card"
-        android:id="@+id/event_1" />
 
-    <include
-        layout="@layout/custom_event_card"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/event_2" />
+        android:id="@+id/event_recyclerView" />
+
 </LinearLayout>

@@ -1,18 +1,15 @@
 package com.alphalabz.businessapp.Activities;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.alphalabz.businessapp.Fragments.ContactFormFragment;
 import com.alphalabz.businessapp.Fragments.ContactFragment;
-import com.alphalabz.businessapp.Fragments.ContactUsFragment;
+import com.alphalabz.businessapp.Fragments.CustomEventFragment;
 import com.alphalabz.businessapp.Fragments.FragmentBlog;
-import com.alphalabz.businessapp.Fragments.FragmentEvent;
 import com.alphalabz.businessapp.Fragments.FragmentHome;
-import com.alphalabz.businessapp.Fragments.GalleryFragment;
 import com.alphalabz.businessapp.Fragments.PhotoCategoryFragment;
 import com.alphalabz.businessapp.Fragments.TeamFragment;
 import com.alphalabz.businessapp.Fragments.VideosFragment;
@@ -26,7 +23,6 @@ import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Drawer drawer = null;
     private final static int D_HOME = 1;
     private final static int D_NOTIFICATION = 2;
     private final static int D_ABOUT = 3;
@@ -40,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private final static int D_PROFILE = 11;
     private final static int D_SETTINGS = 12;
     private final static int D_LOGOUT = 13;
-
+    private Drawer drawer = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                                     fragment = new TeamFragment();
                                     break;
                                 case D_EVENT:
-                                    fragment = new FragmentEvent();
+                                    fragment = new CustomEventFragment();
                                     break;
                                 case D_CONTACTUS:
                                     fragment = new ContactFragment();

@@ -87,4 +87,26 @@
             filler text</item>
     </string-array>
 
+    <string-array name="event_title_name">
+
+        <item>Sona Mahapatra</item>
+
+
+    </string-array>
+
+
+    <string-array name="event_date_time">
+
+        <item>17 Oct 2015</item>
+
+
+    </string-array>
+    <string-array name="event_clock_time">
+
+        <item>00:00 Am Onwards</item>
+
+
+    </string-array>
+
+
 </resources>
