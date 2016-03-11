@@ -49,5 +49,5 @@ dependencies {
         transitive = true
     }
     compile 'com.mikepenz:fontawesome-typeface:4.4.0.1@aar'
-
+    compile 'com.github.aakira:expandable-layout:1.4.3@aar'
 }
