@@ -7,7 +7,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.alphalabz.businessapp.Fragments.ContactFragment;
-import com.alphalabz.businessapp.Fragments.CustomEventFragment;
 import com.alphalabz.businessapp.Fragments.FragmentBlog;
 import com.alphalabz.businessapp.Fragments.FragmentHome;
 import com.alphalabz.businessapp.Fragments.PhotoCategoryFragment;
@@ -100,10 +99,10 @@ public class MainActivity extends AppCompatActivity {
                                 case D_TEAM:
                                     fragment = new TeamFragment();
                                     break;
-                                case D_EVENT:
-                                    fragment = new CustomEventFragment();
+/*                                case D_EVENT:
+                               fragment = new CustomEventFragment();
                                     break;
-                                case D_CONTACTUS:
+  */                              case D_CONTACTUS:
                                     fragment = new ContactFragment();
                                     break;
                                 case D_BLOGS:
@@ -139,6 +138,10 @@ public class MainActivity extends AppCompatActivity {
 
         drawer.setSelectionAtPosition(1, true);
 
+
+    }
+
+    public void togglestatehandler(View v){
 
     }
 }

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_14sdp"
+        >
+        <TextView
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Events Notification"
+            android:textSize="@dimen/_15sdp" />
+        <Switch
+            android:id="@+id/eventNotification"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="@dimen/_20sdp"
+            android:checked="false"
+            android:textOff="  "
+            android:textOn="  "
+            android:onClick="togglestatehandler"
+            android:thumb="@drawable/custom_switch_selector"
+            android:track="@drawable/custom_switch_track" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#E0E0E0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_14sdp"
+
+        >
+        <TextView
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Videos Notification"
+            android:textSize="@dimen/_15sdp" />
+        <Switch
+            android:id="@+id/videosNotification"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="@dimen/_20sdp"
+            android:checked="false"
+            android:textOff="  "
+            android:textOn="  "
+            android:onClick="togglestatehandler"
+            android:thumb="@drawable/custom_switch_selector"
+            android:track="@drawable/custom_switch_track" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#E0E0E0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_14sdp"
+
+        >
+        <TextView
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Photos Notification"
+            android:textSize="@dimen/_15sdp" />
+        <Switch
+            android:id="@+id/photoNotification"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="@dimen/_20sdp"
+            android:checked="false"
+            android:textOff="  "
+            android:textOn="  "
+            android:onClick="togglestatehandler"
+            android:thumb="@drawable/custom_switch_selector"
+            android:track="@drawable/custom_switch_track" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#E0E0E0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_14sdp"
+        >
+        <TextView
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Blogs Notification"
+            android:textSize="@dimen/_15sdp" />
+        <Switch
+            android:id="@+id/blogsNotification"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="@dimen/_20sdp"
+            android:checked="false"
+            android:textOff="  "
+            android:textOn="  "
+            android:onClick="togglestatehandler"
+            android:thumb="@drawable/custom_switch_selector"
+            android:track="@drawable/custom_switch_track" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#E0E0E0"/>
+
+</LinearLayout>
