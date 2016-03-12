@@ -12,7 +12,7 @@ import com.alphalabz.businessapp.R;
 /**
  * Created by swainroshankumar on 26/02/16.
  */
-public class FragmentHome extends Fragment {
+public class HomeFragment extends Fragment {
 
     @Nullable
     @Override

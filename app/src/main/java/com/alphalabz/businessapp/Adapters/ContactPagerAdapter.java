@@ -3,14 +3,9 @@ package com.alphalabz.businessapp.Adapters;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.PagerAdapter;
 
 import com.alphalabz.businessapp.Fragments.ContactFormFragment;
-import com.alphalabz.businessapp.Fragments.ContactFragment;
 import com.alphalabz.businessapp.Fragments.ContactUsFragment;
-
-import java.util.List;
 
 /**
  * Created by Nishita on 02-03-2016.

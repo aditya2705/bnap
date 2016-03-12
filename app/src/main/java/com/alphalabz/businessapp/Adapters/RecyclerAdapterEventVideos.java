@@ -3,12 +3,12 @@ package com.alphalabz.businessapp.Adapters;
 /**
  * Created by Twinklee on 27-02-2016.
  */
+
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
 
 import com.alphalabz.businessapp.Fragments.EventDetailFragment;
 import com.alphalabz.businessapp.Objects.EventObject;

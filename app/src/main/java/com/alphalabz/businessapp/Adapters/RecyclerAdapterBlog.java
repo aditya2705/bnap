@@ -17,22 +17,6 @@ import com.alphalabz.businessapp.R;
 
 import java.util.ArrayList;
 
-
-
-import android.content.Context;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import com.alphalabz.businessapp.Objects.BlogCustomObject;
-import com.alphalabz.businessapp.Objects.VideosCustomObject;
-import com.alphalabz.businessapp.R;
-
-import java.util.ArrayList;
-
 /**
  * Created by SHWETHA on 09-03-2016.
  */

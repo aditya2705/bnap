@@ -6,10 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.alphalabz.businessapp.Fragments.BlogListFragment;
 import com.alphalabz.businessapp.Fragments.ContactFragment;
-import com.alphalabz.businessapp.Fragments.FragmentBlog;
-import com.alphalabz.businessapp.Fragments.FragmentHome;
+import com.alphalabz.businessapp.Fragments.HomeFragment;
 import com.alphalabz.businessapp.Fragments.PhotoCategoryFragment;
+import com.alphalabz.businessapp.Fragments.SettingsFragment;
+import com.alphalabz.businessapp.Fragments.SocialFeedFragment;
 import com.alphalabz.businessapp.Fragments.TeamFragment;
 import com.alphalabz.businessapp.Fragments.VideosFragment;
 import com.alphalabz.businessapp.R;
@@ -87,7 +89,19 @@ public class MainActivity extends AppCompatActivity {
                             final Fragment fragment;
                             switch (i) {
                                 case D_HOME:
-                                    fragment = new FragmentHome();
+                                    fragment = new HomeFragment();
+                                    break;
+                                case D_NOTIFICATION:
+                                    fragment = new HomeFragment();
+                                    break;
+                                case D_ABOUT:
+                                    fragment = new HomeFragment();
+                                    break;
+                                case D_SOCIALFEEDS:
+                                    fragment = new SocialFeedFragment();
+                                    break;
+                                case D_EVENT:
+                                    fragment = new HomeFragment();
                                     break;
 
                                 case D_IMAGES:
@@ -99,17 +113,23 @@ public class MainActivity extends AppCompatActivity {
                                 case D_TEAM:
                                     fragment = new TeamFragment();
                                     break;
-/*                                case D_EVENT:
-                               fragment = new CustomEventFragment();
-                                    break;
-  */                              case D_CONTACTUS:
+                                case D_CONTACTUS:
                                     fragment = new ContactFragment();
                                     break;
                                 case D_BLOGS:
-                                    fragment = new FragmentBlog();
+                                    fragment = new BlogListFragment();
+                                    break;
+                                case D_PROFILE:
+                                    fragment = new HomeFragment();
+                                    break;
+                                case D_SETTINGS:
+                                    fragment = new SettingsFragment();
+                                    break;
+                                case D_LOGOUT:
+                                    fragment = new HomeFragment();
                                     break;
                                 default:
-                                    fragment = new FragmentHome();
+                                    fragment = new HomeFragment();
                                     break;
 
                             }

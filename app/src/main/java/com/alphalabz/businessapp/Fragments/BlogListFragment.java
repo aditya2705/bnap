@@ -12,50 +12,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.alphalabz.businessapp.R;
-import com.mikepenz.materialdrawer.Drawer;
-
-import java.util.ArrayList;
-
-
-
-import android.content.Context;
-import android.graphics.Color;
-import android.graphics.Typeface;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.LayoutInflaterCompat;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.AttributeSet;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
-
 import com.alphalabz.businessapp.Adapters.RecyclerAdapterBlog;
-
 import com.alphalabz.businessapp.Objects.BlogCustomObject;
-import com.alphalabz.businessapp.Objects.VideosCustomObject;
 import com.alphalabz.businessapp.R;
-import com.mikepenz.fontawesome_typeface_library.FontAwesome;
-import com.mikepenz.iconics.IconicsDrawable;
-import com.mikepenz.materialdrawer.Drawer;
-import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 
 import java.util.ArrayList;
 
 /**
  * Created by SHWETHA on 09-03-2016.
  */
-public class FragmentBlog extends Fragment {
+public class BlogListFragment extends Fragment {
 
     public View rootView;
     public RecyclerView recyclerView;
     // TODO: Rename and change types of parameters
 
 
-    public FragmentBlog() {
+    public BlogListFragment() {
         // Required empty public constructor
     }
 
