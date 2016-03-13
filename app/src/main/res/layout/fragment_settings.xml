@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+android:background="@color/md_white_1000"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,10 +22,7 @@
             android:layout_weight="3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:switchMinWidth="@dimen/_20sdp"
             android:checked="false"
-            android:textOff="  "
-            android:textOn="  "
             android:onClick="togglestatehandler"
             android:thumb="@drawable/custom_switch_selector"
             android:track="@drawable/custom_switch_track" />
@@ -33,7 +30,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1sdp"
-        android:background="#E0E0E0"/>
+        android:background="color/md_blue_grey_100"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,10 +50,7 @@
             android:layout_weight="3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:switchMinWidth="@dimen/_20sdp"
             android:checked="false"
-            android:textOff="  "
-            android:textOn="  "
             android:onClick="togglestatehandler"
             android:thumb="@drawable/custom_switch_selector"
             android:track="@drawable/custom_switch_track" />
@@ -65,7 +59,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1sdp"
-        android:background="#E0E0E0"/>
+        android:background="color/md_blue_grey_100"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,10 +79,7 @@
             android:layout_weight="3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:switchMinWidth="@dimen/_20sdp"
             android:checked="false"
-            android:textOff="  "
-            android:textOn="  "
             android:onClick="togglestatehandler"
             android:thumb="@drawable/custom_switch_selector"
             android:track="@drawable/custom_switch_track" />
@@ -97,7 +88,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1sdp"
-        android:background="#E0E0E0"/>
+        android:background="color/md_blue_grey_100"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -117,10 +108,7 @@
             android:layout_weight="3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:switchMinWidth="@dimen/_20sdp"
             android:checked="false"
-            android:textOff="  "
-            android:textOn="  "
             android:onClick="togglestatehandler"
             android:thumb="@drawable/custom_switch_selector"
             android:track="@drawable/custom_switch_track" />
@@ -129,6 +117,6 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1sdp"
-        android:background="#E0E0E0"/>
+        android:background="color/md_blue_grey_100"/>
 
 </LinearLayout>

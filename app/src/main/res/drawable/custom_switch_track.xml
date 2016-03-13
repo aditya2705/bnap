@@ -6,7 +6,7 @@
 
             <stroke android:color="@color/md_blue_grey_100" android:width="@dimen/_2sdp"/>
             <corners android:radius="@dimen/_20sdp"/>
-            <size android:width="@dimen/_10sdp" android:height="@dimen/_32sdp" />
+            <size android:width="@dimen/_10sdp" android:height="@dimen/_30sdp" />
         </shape>
     </item>
 
@@ -15,7 +15,7 @@
             <solid android:color="@color/md_red_A700"/>
             <stroke android:color="@color/md_red_A700" android:width="@dimen/_2sdp"/>
             <corners android:radius="@dimen/_20sdp"/>
-            <size android:width="@dimen/_10sdp" android:height="@dimen/_32sdp"/>
+            <size android:width="@dimen/_10sdp" android:height="@dimen/_30sdp"/>
         </shape>
     </item>
 </selector>
