@@ -66,8 +66,6 @@ class RecyclerViewHolderGallery extends RecyclerView.ViewHolder {
     public RecyclerViewHolderGallery(View itemView) {
         super(itemView);
         ButterKnife.bind(this, itemView);
-        /*list_txt= (TextView)itemView.findViewById(R.id.desc);
-        list_img=(ImageView)itemView.findViewById(R.id.img);*/
     }
 
 

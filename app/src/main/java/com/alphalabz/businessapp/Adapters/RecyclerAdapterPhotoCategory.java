@@ -35,9 +35,6 @@ public class RecyclerAdapterPhotoCategory extends RecyclerView.Adapter<RecyclerV
     public RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //creates a RecyclerViewHolder that holds a view of R.layout.recycler_list_item type
 
-        //both ways to inflate and return a view should work but that's not the case
-        // View itemView= View.inflate(parent.getContext(), R.layout.recycler_list_item, null);
-        // return new RecyclerViewHolder(itemView);
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View itemView = inflater.inflate(R.layout.custom_photo, parent, false);
         itemView.setOnClickListener(this);
@@ -47,7 +44,6 @@ public class RecyclerAdapterPhotoCategory extends RecyclerView.Adapter<RecyclerV
     @Override
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
         holder.list_txt.setText(photoCategoryObjects.get(position).text);
-        //for now
         holder.list_img.setImageResource(photoCategoryObjects.get(position).image);
     }
 

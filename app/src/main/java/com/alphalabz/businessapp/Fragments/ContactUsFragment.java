@@ -1,6 +1,7 @@
 package com.alphalabz.businessapp.Fragments;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -17,6 +18,8 @@ import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.mikepenz.fontawesome_typeface_library.FontAwesome;
+import com.mikepenz.iconics.IconicsDrawable;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -61,9 +64,15 @@ public class ContactUsFragment extends Fragment implements OnMapReadyCallback {
         phText.setText(PHONE);
         emailText.setText(EMAIL);
 
-        addImage.setImageResource(R.drawable.ic_action_location_red);
-        phImage.setImageResource(R.drawable.i4);
-        emailImage.setImageResource(R.drawable.i5);
+        addImage.setImageDrawable(new IconicsDrawable(getContext())
+                .icon(FontAwesome.Icon.faw_home)
+                .color(Color.GRAY));
+        phImage.setImageDrawable(new IconicsDrawable(getContext())
+                .icon(FontAwesome.Icon.faw_phone)
+                .color(Color.GRAY));
+        emailImage.setImageDrawable(new IconicsDrawable(getContext())
+                .icon(FontAwesome.Icon.faw_envelope)
+                .color(Color.GRAY));
 
         phone.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

@@ -104,4 +104,8 @@
         <item name="android:displayOptions">homeAsUp</item>
     </style>
 
+    <style name="EditTextTheme" parent="MaterialDrawerTheme.Light.DarkToolbar">
+        <item name="colorAccent">@color/md_grey_700</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
 </resources>

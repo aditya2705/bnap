@@ -24,8 +24,9 @@
         android:padding="@dimen/_10sdp"
         android:textAlignment="center"
         android:text="submit"
+        android:textColor="@drawable/button_text_selector"
         android:id="@+id/submitbtn"
-        android:background="@color/md_red_500"/>
+        android:background="@drawable/button_selector"/>
         </LinearLayout>
 
 
