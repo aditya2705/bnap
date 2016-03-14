@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.alphalabz.businessapp.Fragments.BlogListFragment;
 import com.alphalabz.businessapp.Fragments.ContactFragment;
+import com.alphalabz.businessapp.Fragments.CustomEventFragment;
 import com.alphalabz.businessapp.Fragments.HomeFragment;
 import com.alphalabz.businessapp.Fragments.PhotoCategoryFragment;
 import com.alphalabz.businessapp.Fragments.SettingsFragment;
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                                     fragment = new SocialFeedFragment();
                                     break;
                                 case D_EVENT:
-                                    fragment = new HomeFragment();
+                                    fragment = new CustomEventFragment();
                                     break;
 
                                 case D_IMAGES:
