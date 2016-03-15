@@ -33,7 +33,7 @@
                     android:src="@drawable/workshop" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/faq_title"
                     android:layout_width="match_parent"
 
                     android:layout_height="wrap_content"

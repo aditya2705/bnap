@@ -9,6 +9,7 @@ import android.view.View;
 import com.alphalabz.businessapp.Fragments.BlogListFragment;
 import com.alphalabz.businessapp.Fragments.ContactFragment;
 import com.alphalabz.businessapp.Fragments.CustomEventFragment;
+import com.alphalabz.businessapp.Fragments.FaqFragment;
 import com.alphalabz.businessapp.Fragments.HomeFragment;
 import com.alphalabz.businessapp.Fragments.PhotoCategoryFragment;
 import com.alphalabz.businessapp.Fragments.SettingsFragment;
@@ -35,9 +36,10 @@ public class MainActivity extends AppCompatActivity {
     private final static int D_SOCIALFEEDS = 8;
     private final static int D_EVENT = 9;
     private final static int D_CONTACTUS = 10;
-    private final static int D_PROFILE = 11;
-    private final static int D_SETTINGS = 12;
-    private final static int D_LOGOUT = 13;
+    private final static int D_FAQS = 11;
+    private final static int D_PROFILE = 12;
+    private final static int D_SETTINGS = 13;
+    private final static int D_LOGOUT = 14;
     private Drawer drawer = null;
 
     @Override
@@ -75,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                         new PrimaryDrawerItem().withName("Social Feeds").withIcon(FontAwesome.Icon.faw_comment),
                         new PrimaryDrawerItem().withName("Event").withIcon(FontAwesome.Icon.faw_calendar),
                         new PrimaryDrawerItem().withName("Contact Us").withIcon(FontAwesome.Icon.faw_phone),
+                        new PrimaryDrawerItem().withName("FAQs").withIcon(FontAwesome.Icon.faw_phone),
                         new PrimaryDrawerItem().withName("Profile").withIcon(FontAwesome.Icon.faw_user),
                         new PrimaryDrawerItem().withName("Settings").withIcon(FontAwesome.Icon.faw_cog),
                         new PrimaryDrawerItem().withName("Logout")
@@ -87,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                         if (drawerItem != null && drawerItem instanceof Nameable) {
                             String name = ((Nameable) drawerItem).getName().getText(MainActivity.this);
                             getSupportActionBar().setTitle(name);
-                            final Fragment fragment;
+                            Fragment fragment = null;
                             switch (i) {
                                 case D_HOME:
                                     fragment = new HomeFragment();
@@ -98,27 +101,29 @@ public class MainActivity extends AppCompatActivity {
                                 case D_ABOUT:
                                     fragment = new HomeFragment();
                                     break;
-                                case D_SOCIALFEEDS:
-                                    fragment = new SocialFeedFragment();
+                                case D_TEAM:
+                                    fragment = new TeamFragment();
                                     break;
-                                case D_EVENT:
-                                    fragment = new CustomEventFragment();
-                                    break;
-
                                 case D_IMAGES:
                                     fragment = new PhotoCategoryFragment();
                                     break;
                                 case D_VIDEOS:
                                     fragment = new VideosFragment();
                                     break;
-                                case D_TEAM:
-                                    fragment = new TeamFragment();
+                                case D_BLOGS:
+                                    fragment = new BlogListFragment();
+                                    break;
+                                case D_SOCIALFEEDS:
+                                    fragment = new SocialFeedFragment();
+                                    break;
+                                case D_EVENT:
+                                    fragment = new CustomEventFragment();
                                     break;
                                 case D_CONTACTUS:
                                     fragment = new ContactFragment();
                                     break;
-                                case D_BLOGS:
-                                    fragment = new BlogListFragment();
+                                case D_FAQS:
+                                    fragment = new FaqFragment();
                                     break;
                                 case D_PROFILE:
                                     fragment = new HomeFragment();
@@ -127,9 +132,6 @@ public class MainActivity extends AppCompatActivity {
                                     fragment = new SettingsFragment();
                                     break;
                                 case D_LOGOUT:
-                                    fragment = new HomeFragment();
-                                    break;
-                                default:
                                     fragment = new HomeFragment();
                                     break;
 

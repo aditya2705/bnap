@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/md_white_1000"
     android:orientation="vertical">
 
     <LinearLayout
@@ -10,15 +11,16 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="1">
+
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/faq_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.95"
             android:gravity="start"
             android:padding="@dimen/_8sdp"
             android:textColor="@color/md_black_1000"
-            android:textSize="@dimen/_18sdp" />
+            android:textSize="@dimen/_13sdp" />
 
         <LinearLayout
             android:id="@+id/button"
@@ -30,13 +32,15 @@
                 android:layout_width="@dimen/_12sdp"
                 android:layout_height="@dimen/_12sdp"
                 android:background="@drawable/triangle" />
+
         </LinearLayout>
+
     </LinearLayout>
+
     <com.github.aakira.expandablelayout.ExpandableRelativeLayout
         android:id="@+id/expandableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
         app:ael_expanded="false"
         app:ael_duration="400"
         app:ael_orientation="vertical">
@@ -49,6 +53,8 @@
             android:gravity="start"
             android:padding="@dimen/_16sdp"
             android:textColor="@color/md_white_1000"
-            android:textSize="@dimen/_16sdp" />
+            android:textSize="@dimen/_12sdp" />
+
     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
 </LinearLayout>

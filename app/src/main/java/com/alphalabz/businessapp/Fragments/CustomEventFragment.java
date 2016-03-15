@@ -46,7 +46,9 @@ public class CustomEventFragment extends Fragment {
         ButterKnife.bind(this, rootView);
         data = new ArrayList<>();
         data.add(new CustomEventCardObject("Sona Mahapatra","17 Oct 2017","00:00 Am Onwards", R.drawable.and1));
-
+        data.add(new CustomEventCardObject("Sona Mahapatra","17 Oct 2017","00:00 Am Onwards", R.drawable.and1));
+        data.add(new CustomEventCardObject("Sona Mahapatra","17 Oct 2017","00:00 Am Onwards", R.drawable.and1));
+        data.add(new CustomEventCardObject("Sona Mahapatra","17 Oct 2017","00:00 Am Onwards", R.drawable.and1));
 
 
         linearLayoutManager = new LinearLayoutManager(getContext());

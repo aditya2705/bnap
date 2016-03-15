@@ -2,118 +2,101 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-android:background="@color/md_white_900"
+    android:background="@color/md_white_900"
     >
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="@dimen/_14sdp"
-        >
+        android:padding="@dimen/_14sdp">
+
         <TextView
             android:paddingTop="@dimen/_5sdp"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Events Notification"
             android:textSize="@dimen/_15sdp" />
         <Switch
-            android:id="@+id/eventNotification"
-            android:layout_weight="3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
             android:checked="false"
             android:onClick="togglestatehandler"
             android:thumb="@drawable/custom_switch_selector"
             android:track="@drawable/custom_switch_track" />
-    </LinearLayout>
+    </RelativeLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1sdp"
         android:background="@color/md_blue_grey_100"/>
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="@dimen/_14sdp"
+        android:padding="@dimen/_14sdp">
 
-        >
         <TextView
             android:paddingTop="@dimen/_5sdp"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="Videos Notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events Notification"
             android:textSize="@dimen/_15sdp" />
         <Switch
-            android:id="@+id/videosNotification"
-            android:layout_weight="3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
             android:checked="false"
             android:onClick="togglestatehandler"
             android:thumb="@drawable/custom_switch_selector"
             android:track="@drawable/custom_switch_track" />
-
-    </LinearLayout>
+    </RelativeLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1sdp"
         android:background="@color/md_blue_grey_100"/>
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="@dimen/_14sdp"
+        android:padding="@dimen/_14sdp">
 
-        >
         <TextView
             android:paddingTop="@dimen/_5sdp"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="Photos Notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events Notification"
             android:textSize="@dimen/_15sdp" />
         <Switch
-            android:id="@+id/photoNotification"
-            android:layout_weight="3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
             android:checked="false"
             android:onClick="togglestatehandler"
             android:thumb="@drawable/custom_switch_selector"
             android:track="@drawable/custom_switch_track" />
-
-    </LinearLayout>
+    </RelativeLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1sdp"
         android:background="@color/md_blue_grey_100"/>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="@dimen/_14sdp"
-        >
+        android:padding="@dimen/_14sdp">
+
         <TextView
             android:paddingTop="@dimen/_5sdp"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="Blogs Notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events Notification"
             android:textSize="@dimen/_15sdp" />
         <Switch
-            android:id="@+id/blogsNotification"
-            android:layout_weight="3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
             android:checked="false"
             android:onClick="togglestatehandler"
             android:thumb="@drawable/custom_switch_selector"
             android:track="@drawable/custom_switch_track" />
-
-    </LinearLayout>
+    </RelativeLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1sdp"

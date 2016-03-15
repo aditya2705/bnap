@@ -42,14 +42,14 @@ public class RecyclerAdapterFaqs extends RecyclerView.Adapter<RecyclerAdapterFaq
     public ViewHolder onCreateViewHolder(final ViewGroup parent, final int viewType) {
         this.context = parent.getContext();
         return new ViewHolder(LayoutInflater.from(context)
-                .inflate(R.layout.fragment_faq_recycler, parent, false));
+                .inflate(R.layout.faq_recycler_item, parent, false));
     }
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
         final FaqObject item = data.get(position);
         final Resources resource = context.getResources();
-        holder.textView.setText(item.description);
+        holder.faqTitleTextView.setText(item.description);
         holder.contentView.setText(item.content);
         holder.itemView.setBackgroundColor(resource.getColor(R.color.md_white_1000));
         holder.expandableLayout.setBackgroundColor(resource.getColor(R.color.md_red_300));
@@ -70,12 +70,19 @@ public class RecyclerAdapterFaqs extends RecyclerView.Adapter<RecyclerAdapterFaq
         });
 
         holder.buttonLayout.setRotation(expandState.get(position) ? 180f : 0f);
+        holder.faqTitleTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(final View v) {
+                onClickButton(holder.expandableLayout);
+            }
+        });
         holder.buttonLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
                 onClickButton(holder.expandableLayout);
             }
         });
+
     }
 
     private void onClickButton(final ExpandableLayout expandableLayout) {
@@ -88,14 +95,14 @@ public class RecyclerAdapterFaqs extends RecyclerView.Adapter<RecyclerAdapterFaq
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView textView,contentView;
+        public TextView faqTitleTextView,contentView;
         public LinearLayout buttonLayout;
         public ExpandableRelativeLayout expandableLayout;
 
         public ViewHolder(View v) {
             super(v);
             contentView=(TextView) v.findViewById(R.id.content_view);
-            textView = (TextView) v.findViewById(R.id.textView);
+            faqTitleTextView = (TextView) v.findViewById(R.id.faq_title);
             buttonLayout = (LinearLayout) v.findViewById(R.id.button);
             expandableLayout = (ExpandableRelativeLayout) v.findViewById(R.id.expandableLayout);
         }
